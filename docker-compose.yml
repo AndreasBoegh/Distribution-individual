@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+    nginx:
+        build:
+          context: nginx
+          dockerfile: Dockerfile
+        networks:
+            - frontend
+        depends_on:
+            - web
+        ports:
+            - 80:80
+    web:
+        build:
+          context: node
+          dockerfile: Dockerfile
+        networks:
+            - frontend
+            - backend
+        depends_on:
+            - redis
+    redis:
+        build:
+          context: redis
+          dockerfile: Dockerfile
+        networks:
+            - backend
+
+networks:
+    frontend:
+    backend:
