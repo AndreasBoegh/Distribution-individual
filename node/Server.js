@@ -19,9 +19,18 @@ if (!sticky.listen(http, 8000)) {
 	});
 } else {
 	//calls function when a new connection is established
-	app.get('/', function(req, res){
+app.get('/', function(req, res){
   //sends the index.html file to the client
+  console.log("Server accessed")
   res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/test', function(req, res) {
+	k = 0
+	for (i = 0; i < 1000; i++) {
+  	k += k + i;
+	}
+	res.send({text: k})
 });
 
 // Total hack. Can't call the file without exposing it.
