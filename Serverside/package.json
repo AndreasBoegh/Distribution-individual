@@ -1,0 +1,18 @@
+{
+  "name": "node_docker",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "First Last <first.last@example.com>",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "dependencies": {
+    "cluster": "^0.7.7",
+    "express": "^4.15.2",
+    "redis": "^2.8.0",
+    "socket.io": "^2.3.0",
+    "socket.io-redis": "^5.2.0",
+    "sticky-session": "^1.1.2"
+  }
+}

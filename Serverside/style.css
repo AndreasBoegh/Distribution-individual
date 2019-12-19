@@ -1,0 +1,74 @@
+.canvas {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    border: 2px solid gray;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 125px;
+    margin:8px;
+    }
+.clearButton {
+    border: 2px solid gray;
+}
+
+.clearButton:hover {
+    color: white;
+    background: gray;
+}
+
+.buttonRed {
+    color: red;
+    border: 2px solid red;
+}
+
+.buttonRed:hover {
+    color: white;
+    background: red;
+}
+
+.buttonBlack {
+    color: black;
+    border: 2px solid black;
+}
+
+.buttonBlack:hover {
+    color: white;
+    background: black;
+}
+
+.buttonBlue {
+    color: #57a9d9;
+    border: 2px solid #57a9d9;
+}
+
+.buttonBlue:hover {
+    color: white;
+    background: #57a9d9;
+}
+
+.buttonGreen {
+    color: green;
+    border: 2px solid green;
+}
+
+.buttonGreen:hover {
+    color: white;
+    background: green;
+}
+
+#buttons {
+    display:inline;
+}
+
+.inline {
+    display:inline;
+}

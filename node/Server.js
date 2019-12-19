@@ -27,9 +27,10 @@ app.get('/', function(req, res){
 
 app.get('/test', function(req, res) {
 	k = 0
-	for (i = 0; i < 1000; i++) {
+	for (i = 0; i < 100000; i++) {
   	k += k + i;
 	}
+	console.log("id: " + cluster.worker.id);
 	res.send({text: k})
 });
 
