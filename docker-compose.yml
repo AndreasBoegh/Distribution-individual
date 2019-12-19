@@ -1,10 +1,8 @@
-version: "3"
+version: "3.7"
 
 services:
     nginx:
-        build:
-          context: nginx
-          dockerfile: Dockerfile
+        image: andreasbogh/nodenginx
         networks:
             - frontend
         depends_on:
@@ -12,18 +10,16 @@ services:
         ports:
             - 80:80
     web:
-        build:
-          context: node
-          dockerfile: Dockerfile
+        image: andreasbogh/nodeserver
         networks:
             - frontend
             - backend
         depends_on:
             - redis
+        deploy:
+            endpoint_mode: dnsrr
     redis:
-        build:
-          context: redis
-          dockerfile: Dockerfile
+        image: andreasbogh/noderedis
         networks:
             - backend
 
