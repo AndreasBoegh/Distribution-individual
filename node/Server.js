@@ -30,8 +30,8 @@ app.get('/test', function(req, res) {
 	for (i = 0; i < 100000; i++) {
   	k += k + i;
 	}
-	console.log("id: " + cluster.worker.id);
-	res.send({text: k})
+	//console.log("id: " + cluster.worker.id);
+	res.send({worker id: cluster.worker.id})
 });
 
 // Total hack. Can't call the file without exposing it.
