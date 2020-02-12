@@ -1,0 +1,12 @@
+{
+  "summary": {
+    "title": "DaIT threat model",
+    "owner": "Me",
+    "description": "Drawing application using socket.io websocket"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "reviewer": "Me"
+  }
+}
